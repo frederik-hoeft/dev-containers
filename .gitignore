@@ -1,0 +1,8 @@
+# python files
+*.pyc
+# virtual environment
+venv/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# VS Code settings
+.vscode/
