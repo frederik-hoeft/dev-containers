@@ -7,6 +7,4 @@
  * 
  * SPDX-License-Identifier: MIT
  */
-@main def main(args: String*) = 
-  println("Hello scala script")
-
+println("Hello scala script")

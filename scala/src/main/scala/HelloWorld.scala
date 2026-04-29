@@ -7,8 +7,10 @@
  * 
  * SPDX-License-Identifier: MIT
  */
-class HelloWorld:
+class HelloWorld {
   println("Hello scala world!")
+}
 
-object HelloWorld:
-  def main(args: Array[String]): Unit = HelloWorld()
+object HelloWorld {
+  def main(args: Array[String]): Unit = new HelloWorld()
+}
