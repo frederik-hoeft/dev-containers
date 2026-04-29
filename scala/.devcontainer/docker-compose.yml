@@ -1,0 +1,11 @@
+services:
+  scala-dev:
+    container_name: scala-dev
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/lab:cached
+    env_file:
+      - .env
+    command: sleep infinity
