@@ -9,8 +9,9 @@
  */
 import org.scalatest.funsuite.AnyFunSuite
 
-class HelloTest extends AnyFunSuite:
+class HelloTest extends AnyFunSuite {
 
   test("Hello test") {
     assert(true)
   }
+}
