@@ -23,8 +23,7 @@
       },
       "extensions": [
         "scala-lang.scala",
-        "scalameta.metals",
-        "github.copilot"
+        "scalameta.metals"
       ]
     }
   },
