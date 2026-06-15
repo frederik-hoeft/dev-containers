@@ -43,6 +43,7 @@
     "5000": {"label": "Flask/API", "onAutoForward": "silent"},
     "8888": {"label": "Jupyter", "onAutoForward": "notify"}
   },
-  "postCreateCommand": "echo '✨ uv is installed! Use: uv sync --dev'",
+  "postCreateCommand": "bash .devcontainer/setup-shell.sh && echo '✨ uv is installed! Use: uv sync --dev'",
+  "waitFor": "postCreateCommand",
   "remoteUser": "dev"
 }

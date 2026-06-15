@@ -7,6 +7,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     curl \
     git \
     vim \
+    wget \
     build-essential \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/* \
