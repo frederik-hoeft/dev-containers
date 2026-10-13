@@ -1,0 +1,15 @@
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+      - maven-cache:/home/vscode/.m2
+      - npm-cache:/home/vscode/.npm
+    init: true
+    command: sleep infinity
+
+volumes:
+  maven-cache:
+  npm-cache:
