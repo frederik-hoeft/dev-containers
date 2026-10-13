@@ -19,7 +19,7 @@ No application code, dependency manifests, database, or framework-specific proje
 2. Open that repository in VS Code with the Dev Containers extension, then run **Dev Containers: Reopen in Container**.
 3. Create or open your Spring Boot/Maven and Next.js projects as usual. The repository is mounted at `/workspace`.
 
-During container creation, `.devcontainer/setup-shell.sh` configures Oh My Zsh, plugins, the `fred` theme, and the shared shell/Vim configuration. The script fetches those files from GitHub and requires network access. As with the other templates, it overwrites the container user's `~/.zshrc` and `~/.vimrc`. It can be rerun to update the cloned repositories and dotfiles.
+During container creation, `.devcontainer/setup-shell.sh` configures Oh My Zsh, plugins, and the shared shell/Vim configuration. The script fetches those files from GitHub and requires network access. As with the other templates, it overwrites the container user's `~/.zshrc` and `~/.vimrc`. It can be rerun to update the cloned repositories and dotfiles.
 
 For example, after the consuming project has been created:
 
