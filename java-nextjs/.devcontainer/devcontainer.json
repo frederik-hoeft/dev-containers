@@ -5,6 +5,12 @@
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
   "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode",
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true
+    },
     "ghcr.io/devcontainers/features/java:1": {
       "version": "none",
       "installMaven": true
@@ -30,11 +36,20 @@
       }
     }
   },
-  "forwardPorts": [3000, 8080],
+  "forwardPorts": [
+    3000,
+    8080
+  ],
   "portsAttributes": {
-    "3000": {"label": "Next.js", "onAutoForward": "notify"},
-    "8080": {"label": "Spring Boot", "onAutoForward": "notify"}
+    "3000": {
+      "label": "Next.js",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "Spring Boot",
+      "onAutoForward": "notify"
+    }
   },
-  "postCreateCommand": "java -version && mvn -version && node --version && npm --version",
+  "postCreateCommand": "bash .devcontainer/setup-shell.sh && java -version && mvn -version && node --version && npm --version",
   "remoteUser": "vscode"
 }
