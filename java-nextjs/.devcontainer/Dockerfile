@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/java:25-bookworm
+FROM mcr.microsoft.com/devcontainers/java:25-trixie
 
 # Docker initializes named volumes from these directories on first use.
 # Make sure the non-root workspace user owns the Maven and npm caches.
